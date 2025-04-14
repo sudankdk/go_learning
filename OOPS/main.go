@@ -1,7 +1,8 @@
 package main
 
 import (
-	poly "oops/Poly"
+	"fmt"
+	compositions "oops/Compositions"
 )
 
 func main(){
@@ -12,7 +13,11 @@ func main(){
 	// fmt.Println("object of person is created: ",p)
 
 
-	var c poly.Shape= poly.Circle{}
-	c.Render()
+	// var c poly.Shape= poly.Circle{}
+	// c.Render()
+
+	c := compositions.NewCar("hahaha",1,2)
+	fmt.Println(c.HP())
+	
 	
 }
